@@ -71,14 +71,14 @@ python tools\md2html.py content output
 
 Bilder hochladen
 
-Lege deine echten Produktbilder in den Ordner `assets/images/` mit diesen Dateinamen:
+Lege deine echten Produktbilder in den Ordner `assets/images/` mit diesen Dateinamen (oder `.jpeg`):
 
-- `product-1.jpg` — Hero / Hauptbild
-- `product-2.jpg` — Produkt 1 (Schrank)
-- `product-3.jpg` — Produkt 2 (Kommode)
-- `product-4.jpg` — Produkt 3 (Tisch)
-- `product-5.jpg` — Produkt 4 (Sideboard / Lowboard)
-- optional `product-6.jpg`, `product-7.jpg`, `product-8.jpg` für weitere Produkte
+- `product-1.jpeg` — Hero / Hauptbild
+- `product-2.jpeg` — Produkt 1 (Schrank)
+- `product-3.jpeg` — Produkt 2 (Kommode)
+- `product-4.jpeg` — Produkt 3 (Tisch)
+- `product-5.jpeg` — Produkt 4 (Sideboard / Lowboard)
+- optional `product-6.jpeg`, `product-7.jpeg`, `product-8.jpeg` für weitere Produkte
 
 Wenn du die Bilder hier im Chat hochgeladen hast, sag kurz "jetzt ersetzen" und ich füge sie ins Repo ein; alternativ lade die Dateien manuell in `assets/images/` hoch und pushe sie.
 
