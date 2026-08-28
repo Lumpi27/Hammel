@@ -1,32 +1,73 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Prototype Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Start — Deine Marke</title>
+  <link rel="stylesheet" href="/assets/template.css">
 </head>
 <body>
-  <header>
-    <h1>Einfacher Prototyp</h1>
-    <p>Startseite — minimaler Aufbau zum Hosten via Git/GitHub Pages.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Deine Marke</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">Über uns</a></li>
+          <li><a href="/produkte.html">Produkte</a></li>
+          <li><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Willkommen</h2>
-      <p>Das ist eine sehr einfache Prototype-Website. Später kann hier mehr Design und Inhalt kommen.</p>
-      <p class="actions">Weiter: <a href="#deploy">Deploy-Anleitung</a></p>
+    <section class="hero" style="background:linear-gradient(180deg, rgba(11,79,215,0.06), rgba(11,79,215,0.02));">
+      <div class="container">
+        <h1 class="hero-title">Kurz, klar, überzeugend</h1>
+        <p class="hero-sub">Eine Vorlage im modernen Look — mobil optimiert. Ersetze einfach die Texte und Bilder.</p>
+        <p class="hero-cta"><a class="btn" href="#features">Funktionen</a></p>
+      </div>
     </section>
 
-    <section id="deploy">
-      <h3>Deploy</h3>
-      <p>Siehe <a href="README.md">README</a> für Git/GitHub Pages Befehle.</p>
+    <section id="features" class="content container grid">
+      <div class="card">
+        <h3>Design</h3>
+        <p>Sauberes, klares Layout mit starker Typografie und Fokus auf Übersicht.</p>
+      </div>
+      <div class="card">
+        <h3>Responsiv</h3>
+        <p>Navigation und Inhalt passen sich automatisch an Mobilgeräte an.</p>
+      </div>
+      <div class="card">
+        <h3>Einfach editierbar</h3>
+        <p>Ändere Inhalte direkt in den HTML-Dateien oder nutze ein statisches Site-Generator-Setup.</p>
+      </div>
+    </section>
+
+    <section class="content container">
+      <article>
+        <h2>So editierst du Inhalte</h2>
+        <p>Öffne die jeweilige HTML-Datei (`index.html`, `about.html`, `kontakt.html`) und ersetze die Texte. Styles stehen in `assets/template.css`.</p>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <small>© Prototype</small>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Deine Marke • Impressum • Datenschutz</p>
+    </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.site-nav');
+      btn && btn.addEventListener('click', function(){
+        nav.classList.toggle('open');
+      });
+    });
+  </script>
 </body>
 </html>

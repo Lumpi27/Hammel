@@ -50,4 +50,11 @@ cd "C:\Users\adria\Desktop\Niklas"
 ```
 
 Wenn du möchtest, führe ich die `git init`/`commit`/`push`-Befehle lokal für dich aus (du musst nur die Remote-URL angeben).
+Inhalte bearbeiten
+
+- Hauptseiten: `index.html`, `about.html`, `kontakt.html` — ersetze Texte direkt in den Dateien.
+- Styles: `assets/template.css` — passe Farben/Abstände an Variablen oben in der Datei an.
+- Template: `template/base.html` enthält die Basisstruktur, kopiere Komponenten in neue Seiten.
+
+Wenn du willst, erstelle ich außerdem ein kleines Skript, das Seiten aus Markdown generiert.
 

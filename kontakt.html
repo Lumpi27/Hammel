@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontakt — Deine Marke</title>
+  <link rel="stylesheet" href="/assets/template.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Deine Marke</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">Über uns</a></li>
+          <li><a href="/produkte.html">Produkte</a></li>
+          <li><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="content container">
+      <h1>Kontakt</h1>
+      <p>Kontaktinformationen, Formular oder E-Mail-Adresse hier einfügen.</p>
+      <ul>
+        <li>Telefon: +49 000 000000</li>
+        <li>E-Mail: info@deinemarke.example</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Deine Marke</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.site-nav');
+      btn && btn.addEventListener('click', function(){
+        nav.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
