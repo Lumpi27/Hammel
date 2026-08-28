@@ -69,4 +69,17 @@ python tools\md2html.py content output
 
 3. Die generierten `.html` Dateien landen in `output/` und können ins Repo kopiert oder direkt deployed werden.
 
+Bilder hochladen
+
+Lege deine echten Produktbilder in den Ordner `assets/images/` mit diesen Dateinamen:
+
+- `product-1.jpg` — Hero / Hauptbild
+- `product-2.jpg` — Produkt 1 (Schrank)
+- `product-3.jpg` — Produkt 2 (Kommode)
+- `product-4.jpg` — Produkt 3 (Tisch)
+- `product-5.jpg` — Produkt 4 (Sideboard / Lowboard)
+- optional `product-6.jpg`, `product-7.jpg`, `product-8.jpg` für weitere Produkte
+
+Wenn du die Bilder hier im Chat hochgeladen hast, sag kurz "jetzt ersetzen" und ich füge sie ins Repo ein; alternativ lade die Dateien manuell in `assets/images/` hoch und pushe sie.
+
 
