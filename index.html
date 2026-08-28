@@ -1,73 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Start — Deine Marke</title>
-  <link rel="stylesheet" href="assets/template.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Automotive Layout</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Deine Marke</a>
-      <button class="nav-toggle" aria-label="Menu">☰</button>
-      <nav class="site-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">Über uns</a></li>
-          <li><a href="produkte.html">Produkte</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero" style="background:linear-gradient(180deg, rgba(11,79,215,0.06), rgba(11,79,215,0.02));">
-      <div class="container">
-        <h1 class="hero-title">Kurz, klar, überzeugend</h1>
-        <p class="hero-sub">Eine Vorlage im modernen Look — mobil optimiert. Ersetze einfach die Texte und Bilder.</p>
-        <p class="hero-cta"><a class="btn" href="#features">Funktionen</a></p>
-      </div>
-    </section>
+    <!-- 1. HEADER & NAVIGATION -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">[ DEIN LOGO ]</div>
+            <nav class="main-nav">
+                <a href="produkte.html">Modelle</a>
+                <a href="produkte.html">Kaufen &amp; Mieten</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">Marke</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#">[ Suche ]</a>
+            </div>
+            <button class="nav-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
 
-    <section id="features" class="content container grid">
-      <div class="card">
-        <h3>Design</h3>
-        <p>Sauberes, klares Layout mit starker Typografie und Fokus auf Übersicht.</p>
-      </div>
-      <div class="card">
-        <h3>Responsiv</h3>
-        <p>Navigation und Inhalt passen sich automatisch an Mobilgeräte an.</p>
-      </div>
-      <div class="card">
-        <h3>Einfach editierbar</h3>
-        <p>Ändere Inhalte direkt in den HTML-Dateien oder nutze ein statisches Site-Generator-Setup.</p>
-      </div>
-    </section>
+    <main>
+        <!-- 2. HERO SECTION (Großes Startbild/Video) -->
+        <section class="hero-stage">
+            <div class="media-placeholder hero-media">
+                <span>[ Großes Hintergrundbild oder Video (16:9) ]</span>
+            </div>
+            <div class="hero-content container">
+                <h1>Faszination und Dynamik.</h1>
+                <p>Ikonisches Design trifft auf innovative Details. Entdecken Sie die Zukunft der Mobilität.</p>
+                <div class="button-group">
+                    <a href="#" class="btn btn-primary">Konfigurieren</a>
+                    <a href="#" class="btn btn-secondary">Mehr erfahren</a>
+                </div>
+            </div>
+        </section>
 
-    <section class="content container">
-      <article>
-        <h2>So editierst du Inhalte</h2>
-        <p>Öffne die jeweilige HTML-Datei (`index.html`, `about.html`, `kontakt.html`) und ersetze die Texte. Styles stehen in `assets/template.css`.</p>
-      </article>
-    </section>
-  </main>
+        <!-- 3. MODEL RANGE (Fahrzeug-Übersicht) -->
+        <section class="section model-range container">
+            <h2>Unsere Fahrzeug-Kategorien.</h2>
+            <div class="grid-container models-grid">
+                <a href="#" class="card">
+                    <span class="eyebrow">Entdecken</span>
+                    <h3>Limousinen</h3>
+                    <div class="media-placeholder card-img"><span>[ Bild: Limousine ]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <span class="eyebrow">Entdecken</span>
+                    <h3>SUV &amp; Geländewagen</h3>
+                    <div class="media-placeholder card-img"><span>[ Bild: SUV ]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <span class="eyebrow">Entdecken</span>
+                    <h3>Coupés &amp; Cabriolets</h3>
+                    <div class="media-placeholder card-img"><span>[ Bild: Coupé ]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <span class="eyebrow">Entdecken</span>
+                    <h3>Transporter &amp; Vans</h3>
+                    <div class="media-placeholder card-img"><span>[ Bild: Van ]</span></div>
+                </a>
+            </div>
+        </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© Deine Marke • Impressum • Datenschutz</p>
-    </div>
-  </footer>
+        <!-- 4. CAMPAIGNS (Aktuelle Highlights / Angebote) -->
+        <section class="section campaigns container">
+            <h2>Aktuelle Highlights.</h2>
+            <div class="grid-container campaigns-grid">
+                <article class="campaign-card">
+                    <div class="media-placeholder campaign-img"><span>[ Bild: Highlight 1 ]</span></div>
+                    <div class="campaign-text">
+                        <h3>Die neue Generation.</h3>
+                        <p>Vereint kühnes Design, elektrisierendes Selbstbewusstsein und Komfort im Alltag.</p>
+                        <a href="#" class="btn btn-secondary-dark">Zum Modell</a>
+                    </div>
+                </article>
+                <article class="campaign-card">
+                    <div class="media-placeholder campaign-img"><span>[ Bild: Highlight 2 ]</span></div>
+                    <div class="campaign-text">
+                        <h3>Leasing-Angebote.</h3>
+                        <p>Profitieren Sie jetzt von unseren attraktiven Konditionen für Privat- und Geschäftskunden.</p>
+                        <a href="#" class="btn btn-secondary-dark">Zu den Angeboten</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      var btn = document.querySelector('.nav-toggle');
-      var nav = document.querySelector('.site-nav');
-      btn && btn.addEventListener('click', function(){
-        nav.classList.toggle('open');
-      });
-    });
-  </script>
+    <!-- 5. FOOTER (Fußzeile) -->
+    <footer class="footer">
+        <div class="footer-links container">
+            <div class="footer-col">
+                <h4>Fahrzeuge</h4>
+                <a href="#">Alle Modelle</a>
+                <a href="#">Elektroantrieb</a>
+                <a href="#">Gebrauchtwagen</a>
+            </div>
+            <div class="footer-col">
+                <h4>Kauf &amp; Beratung</h4>
+                <a href="#">Konfigurator</a>
+                <a href="#">Probefahrt</a>
+                <a href="#">Standortsuche</a>
+            </div>
+            <div class="footer-col">
+                <h4>Rechtliches</h4>
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dein Projektname. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var btn = document.querySelector('.nav-toggle');
+            var nav = document.querySelector('.main-nav');
+            btn && btn.addEventListener('click', function(){
+                document.body.classList.toggle('nav-open');
+            });
+        });
+    </script>
+
 </body>
 </html>
