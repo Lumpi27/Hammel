@@ -58,3 +58,15 @@ Inhalte bearbeiten
 
 Wenn du willst, erstelle ich außerdem ein kleines Skript, das Seiten aus Markdown generiert.
 
+Automatische Markdown → HTML Generierung
+
+1. Schreibe `.md` Dateien in `content/`.
+2. Führe aus:
+
+```powershell
+python tools\md2html.py content output
+```
+
+3. Die generierten `.html` Dateien landen in `output/` und können ins Repo kopiert oder direkt deployed werden.
+
+
