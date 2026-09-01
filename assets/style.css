@@ -15,7 +15,8 @@ body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, '
 /* Header */
 .header{background:transparent;padding:.75rem 0;position:sticky;top:0;z-index:50}
 .header-inner{display:flex;align-items:center;gap:1rem}
-.logo{font-weight:700;font-size:1.1rem}
+.logo,.brand{display:inline-flex;align-items:center;text-decoration:none}
+.logo img,.brand img{display:block;height:36px;width:auto;max-width:170px;object-fit:contain}
 .main-nav{display:flex;gap:1.25rem;margin-left:2rem}
 .main-nav a{color:var(--dark);text-decoration:none;padding:.25rem .5rem;border-radius:6px}
 .main-nav a:hover{background:rgba(11,79,215,0.06)}

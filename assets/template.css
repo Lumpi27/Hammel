@@ -13,7 +13,8 @@ body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial
 .container{max-width:var(--container);margin:0 auto;padding:1rem}
 .site-header{background:transparent;position:sticky;top:0;z-index:40}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0}
-.brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.05rem}
+.brand{display:inline-flex;align-items:center;text-decoration:none;font-weight:700;color:var(--accent);font-size:1.05rem}
+.brand img{display:block;height:36px;width:auto;max-width:170px;object-fit:contain}
 .site-nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
 .site-nav a{color:var(--text);text-decoration:none;padding:0.5rem 0.6rem;border-radius:6px}
 .site-nav a:hover{background:rgba(11,79,215,0.06)}
