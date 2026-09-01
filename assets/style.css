@@ -1,10 +1,10 @@
 /* Premium Automotive Layout - simplified styles */
 :root{
   --bg:#fff;
-  --page-bg:#f6f7f8;
-  --accent:#0b4fd7;
-  --dark:#0f1724;
-  --muted:#6b7280;
+  --page-bg:#f5f1ea;
+  --accent:#8b5e3c;
+  --dark:#1f1a17;
+  --muted:#675f5a;
   --radius:12px;
   --container:1200px;
 }
@@ -13,39 +13,40 @@ body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, '
 .container{max-width:var(--container);margin:0 auto;padding:1rem}
 
 /* Header */
-.header{background:transparent;padding:.75rem 0;position:sticky;top:0;z-index:50}
+.header{background:rgba(255,255,255,0.66);backdrop-filter:blur(6px);padding:.75rem 0;position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(31,26,23,0.06)}
 .header-inner{display:flex;align-items:center;gap:1rem}
 .brand-lockup{display:inline-flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--dark);font-weight:700;letter-spacing:.02em}
 .brand-lockup img{display:block;height:42px;width:auto;max-width:170px;object-fit:contain}
 .brand-lockup span{font-size:1.05rem}
 .main-nav{display:flex;gap:1.25rem;margin-left:2rem}
 .main-nav a{color:var(--dark);text-decoration:none;padding:.25rem .5rem;border-radius:6px}
-.main-nav a:hover{background:rgba(11,79,215,0.06)}
+.main-nav a:hover{background:rgba(139,94,60,0.08)}
 .header-actions{margin-left:auto}
 .nav-toggle{display:none;border:0;background:none;font-size:1.2rem}
 
 /* Hero */
 .hero-stage{position:relative;display:flex;flex-direction:column;align-items:stretch;gap:1rem;background:linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.01));padding-bottom:2rem}
-.hero-media{width:100%;height:0;padding-bottom:56.25%;background:#ddd;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--muted)}
-.hero-content{position:relative;margin-top:-6rem;padding:2rem;background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(255,255,255,0.95));border-radius:var(--radius);box-shadow:0 20px 50px rgba(2,6,23,0.08);max-width:70%;margin-left:4%}
-.hero-content h1{margin:0 0 .5rem;font-size:2rem}
-.hero-content p{margin:0 0 1rem;color:var(--muted)}
-.button-group{display:flex;gap:.75rem}
-.btn{display:inline-block;padding:.6rem 1rem;border-radius:999px;text-decoration:none}
+.hero-media{width:100%;height:0;padding-bottom:56.25%;background:#ddd;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--muted);overflow:hidden;box-shadow:0 24px 44px rgba(31,26,23,0.08)}
+.hero-media img{display:block;width:100%;height:100%;object-fit:cover}
+.hero-content{position:relative;margin-top:-6rem;padding:2rem;background:linear-gradient(180deg,rgba(255,255,255,0.92),rgba(255,255,255,0.96));border-radius:var(--radius);box-shadow:0 20px 50px rgba(2,6,23,0.08);max-width:70%;margin-left:4%}
+.hero-content h1{margin:0 0 .5rem;font-size:2.2rem;line-height:1.1}
+.hero-content p{margin:0 0 1rem;color:var(--muted);max-width:42rem}
+.button-group{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.1rem;border-radius:999px;text-decoration:none}
 .btn-primary{background:var(--dark);color:#fff}
-.btn-secondary{background:transparent;border:1px solid rgba(15,23,36,0.08);color:var(--dark)}
+.btn-secondary{background:transparent;border:1px solid rgba(31,26,23,0.12);color:var(--dark)}
 .btn-secondary-dark{background:#111827;color:#fff;border-radius:8px;padding:.5rem .8rem}
 
 /* Models grid */
 .models-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1rem}
-.card{background:var(--bg);padding:1rem;border-radius:var(--radius);text-decoration:none;color:inherit;display:block}
+.card{background:var(--bg);padding:1rem;border-radius:var(--radius);text-decoration:none;color:inherit;display:block;box-shadow:0 12px 30px rgba(31,26,23,0.04)}
 .card .eyebrow{font-size:.8rem;color:var(--accent);display:block}
 .card h3{margin:.5rem 0}
 .card-img{height:140px;background:#f3f4f6;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
 
 /* Campaigns */
 .campaigns-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1rem}
-.campaign-card{display:flex;gap:1rem;background:var(--bg);padding:1rem;border-radius:var(--radius)}
+.campaign-card{display:flex;gap:1rem;background:var(--bg);padding:1rem;border-radius:var(--radius);box-shadow:0 12px 30px rgba(31,26,23,0.04)}
 .campaign-img{width:45%;background:#eee;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
 .campaign-text h3{margin:0 0 .5rem}
 
