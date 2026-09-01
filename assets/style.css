@@ -31,7 +31,7 @@ body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, '
   display:flex;
   align-items:flex-end;
   padding:2rem 0 3rem;
-  background:url('./images/Wohnzimmer.jfif') center/cover no-repeat;
+  background:url('./images/Wohnzimmer.jpg') center/cover no-repeat;
   box-shadow:0 24px 44px rgba(31,26,23,0.08);
 }
 .hero-stage::before{
